@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="CtS-rA-C9T">
             <objects>
-                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="TowerTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
                         <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
@@ -15,8 +17,91 @@
                     <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-ZF-hq3">
+                                <rect key="frame" x="494" y="91" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwZ-De-rKy">
+                                <rect key="frame" x="494" y="201" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtb-8Y-oVW">
+                                <rect key="frame" x="494" y="316" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-fQ-YaA">
+                                <rect key="frame" x="494" y="428" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASW-Qx-Ww6">
+                                <rect key="frame" x="72" y="428" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ENEMY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlG-z8-5KH">
+                                <rect key="frame" x="322" y="428" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="HERO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="width" secondItem="jtb-8Y-oVW" secondAttribute="height" multiplier="1:1" id="0Ek-bg-yxz"/>
+                            <constraint firstItem="jtb-8Y-oVW" firstAttribute="top" secondItem="dwZ-De-rKy" secondAttribute="bottom" constant="10" id="F1I-R4-qU7"/>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="xPS-fQ-YaA" secondAttribute="bottom" constant="20" id="G7B-ix-7y0"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="width" secondItem="xPS-fQ-YaA" secondAttribute="width" id="Hje-Z0-CCK"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="height" secondItem="OmU-ZF-hq3" secondAttribute="height" id="Jpz-6F-8PS"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="height" secondItem="jtb-8Y-oVW" secondAttribute="height" id="LIr-8n-vca"/>
+                            <constraint firstItem="ASW-Qx-Ww6" firstAttribute="height" secondItem="WlG-z8-5KH" secondAttribute="height" id="NxH-eZ-xrw"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="top" secondItem="OmU-ZF-hq3" secondAttribute="bottom" constant="10" id="PNf-zt-oKI"/>
+                            <constraint firstItem="ASW-Qx-Ww6" firstAttribute="width" secondItem="WlG-z8-5KH" secondAttribute="width" id="Tgp-i9-Fpn"/>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="ASW-Qx-Ww6" secondAttribute="bottom" constant="100" id="WvT-KM-61f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OmU-ZF-hq3" secondAttribute="trailing" constant="20" id="XK2-cp-pU1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dwZ-De-rKy" secondAttribute="trailing" constant="20" id="YVd-FE-kkJ"/>
+                            <constraint firstItem="OmU-ZF-hq3" firstAttribute="top" secondItem="PCf-gQ-wO7" secondAttribute="bottom" constant="20" id="Zfy-bm-jtL"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="width" secondItem="jtb-8Y-oVW" secondAttribute="width" id="cM6-Mq-EVd"/>
+                            <constraint firstItem="ASW-Qx-Ww6" firstAttribute="width" secondItem="WlG-z8-5KH" secondAttribute="height" multiplier="1:1" id="caf-30-ZgL"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="width" secondItem="OmU-ZF-hq3" secondAttribute="height" multiplier="1:1" id="emG-e3-hFV"/>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="WlG-z8-5KH" secondAttribute="bottom" constant="100" id="ezR-rq-zYk"/>
+                            <constraint firstItem="xPS-fQ-YaA" firstAttribute="top" secondItem="jtb-8Y-oVW" secondAttribute="bottom" constant="10" id="hVX-O2-VwJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jtb-8Y-oVW" secondAttribute="trailing" constant="20" id="i9M-wq-fgz"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="width" secondItem="xPS-fQ-YaA" secondAttribute="height" multiplier="1:1" id="pGc-zq-Xp4"/>
+                            <constraint firstItem="xPS-fQ-YaA" firstAttribute="leading" secondItem="WlG-z8-5KH" secondAttribute="trailing" constant="50" id="pif-kQ-sAc"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="height" secondItem="xPS-fQ-YaA" secondAttribute="height" id="u2n-l4-00x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xPS-fQ-YaA" secondAttribute="trailing" constant="20" id="vu7-0l-SjV"/>
+                            <constraint firstItem="dwZ-De-rKy" firstAttribute="width" secondItem="OmU-ZF-hq3" secondAttribute="width" id="wAW-Ze-GrK"/>
+                            <constraint firstItem="WlG-z8-5KH" firstAttribute="leading" secondItem="ASW-Qx-Ww6" secondAttribute="trailing" constant="100" id="xLe-Gi-ril"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="attackButton1" destination="OmU-ZF-hq3" id="vKN-Dm-ajK"/>
+                        <outlet property="attackButton2" destination="dwZ-De-rKy" id="VxF-Pq-Bej"/>
+                        <outlet property="attackButton3" destination="jtb-8Y-oVW" id="chQ-TI-VL4"/>
+                        <outlet property="attackButton4" destination="xPS-fQ-YaA" id="dvc-YM-fcS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AA1F2D801B0D4180000D183E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F2D7F1B0D4180000D183E /* AppDelegate.swift */; };
-		AA1F2D821B0D4180000D183E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA1F2D811B0D4180000D183E /* GameScene.sks */; };
-		AA1F2D841B0D4180000D183E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F2D831B0D4180000D183E /* GameScene.swift */; };
-		AA1F2D861B0D4180000D183E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F2D851B0D4180000D183E /* GameViewController.swift */; };
 		AA1F2D891B0D4180000D183E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1F2D871B0D4180000D183E /* Main.storyboard */; };
 		AA1F2D8B1B0D4180000D183E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1F2D8A1B0D4180000D183E /* Images.xcassets */; };
 		AA1F2D8E1B0D4180000D183E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1F2D8C1B0D4180000D183E /* LaunchScreen.xib */; };
 		AA1F2D9A1B0D4181000D183E /* TowerTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F2D991B0D4181000D183E /* TowerTimeTests.swift */; };
+		AA1F2DB21B0D45CF000D183E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F2DB11B0D45CF000D183E /* GameViewController.swift */; };
+		AA1F2DBA1B0D4615000D183E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F2DB91B0D4615000D183E /* GameScene.swift */; };
+		AAF089E11B0E482B00E6FC39 /* TowerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF089E01B0E482B00E6FC39 /* TowerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,15 +31,15 @@
 		AA1F2D7A1B0D4180000D183E /* TowerTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TowerTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F2D7E1B0D4180000D183E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1F2D7F1B0D4180000D183E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA1F2D811B0D4180000D183E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		AA1F2D831B0D4180000D183E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		AA1F2D851B0D4180000D183E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AA1F2D881B0D4180000D183E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA1F2D8A1B0D4180000D183E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA1F2D8D1B0D4180000D183E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AA1F2D931B0D4181000D183E /* TowerTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TowerTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F2D981B0D4181000D183E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1F2D991B0D4181000D183E /* TowerTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerTimeTests.swift; sourceTree = "<group>"; };
+		AA1F2DB11B0D45CF000D183E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = Controllers/GameViewController.swift; sourceTree = "<group>"; };
+		AA1F2DB91B0D4615000D183E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = Views/GameScene.swift; sourceTree = "<group>"; };
+		AAF089E01B0E482B00E6FC39 /* TowerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TowerManager.swift; path = BusinessLayer/TowerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,13 @@
 		AA1F2D7C1B0D4180000D183E /* TowerTime */ = {
 			isa = PBXGroup;
 			children = (
+				AA1F2DB51B0D45E9000D183E /* DataAccessLayer */,
+				AA1F2DB41B0D45E0000D183E /* BusinessLayer */,
+				AA1F2DB31B0D45D6000D183E /* Controllers */,
+				AA1F2DB61B0D45F3000D183E /* DataLayer */,
+				AA1F2DB71B0D45FF000D183E /* Models */,
+				AA1F2DB81B0D4604000D183E /* Views */,
 				AA1F2D7F1B0D4180000D183E /* AppDelegate.swift */,
-				AA1F2D811B0D4180000D183E /* GameScene.sks */,
-				AA1F2D831B0D4180000D183E /* GameScene.swift */,
-				AA1F2D851B0D4180000D183E /* GameViewController.swift */,
 				AA1F2D871B0D4180000D183E /* Main.storyboard */,
 				AA1F2D8A1B0D4180000D183E /* Images.xcassets */,
 				AA1F2D8C1B0D4180000D183E /* LaunchScreen.xib */,
@@ -116,6 +119,51 @@
 				AA1F2D981B0D4181000D183E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA1F2DB31B0D45D6000D183E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F2DB11B0D45CF000D183E /* GameViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AA1F2DB41B0D45E0000D183E /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AAF089E01B0E482B00E6FC39 /* TowerManager.swift */,
+			);
+			name = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		AA1F2DB51B0D45E9000D183E /* DataAccessLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataAccessLayer;
+			sourceTree = "<group>";
+		};
+		AA1F2DB61B0D45F3000D183E /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		AA1F2DB71B0D45FF000D183E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AA1F2DB81B0D4604000D183E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F2DB91B0D4615000D183E /* GameScene.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +248,6 @@
 			files = (
 				AA1F2D8E1B0D4180000D183E /* LaunchScreen.xib in Resources */,
 				AA1F2D8B1B0D4180000D183E /* Images.xcassets in Resources */,
-				AA1F2D821B0D4180000D183E /* GameScene.sks in Resources */,
 				AA1F2D891B0D4180000D183E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA1F2D841B0D4180000D183E /* GameScene.swift in Sources */,
-				AA1F2D861B0D4180000D183E /* GameViewController.swift in Sources */,
+				AA1F2DBA1B0D4615000D183E /* GameScene.swift in Sources */,
+				AAF089E11B0E482B00E6FC39 /* TowerManager.swift in Sources */,
+				AA1F2DB21B0D45CF000D183E /* GameViewController.swift in Sources */,
 				AA1F2D801B0D4180000D183E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +465,7 @@
 				AA1F2D9F1B0D4181000D183E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA1F2DA01B0D4181000D183E /* Build configuration list for PBXNativeTarget "TowerTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +474,7 @@
 				AA1F2DA21B0D4181000D183E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
